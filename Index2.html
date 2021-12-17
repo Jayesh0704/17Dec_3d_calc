@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    
+    <title>Online Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+    <form class="calculator" name="calc">
+      <input type="text" class="value" name="txt" readonly="" />
+      <span class="num clear" onclick="clean()">Clear</span>
+      <span class="num" onclick="back()">Back</span>
+      <span class="num" onclick="insert('/')">/</span>
+      <span class="num" onclick="insert('*')">x</span>
+      <span class="num" onclick="insert(7)">7</span>
+      <span class="num" onclick="insert(8)">8</span>
+      <span class="num" onclick="insert(9)">9</span>
+      <span class="num" onclick="insert('-')">-</span>
+      <span class="num" onclick="insert(4)">4</span>
+      <span class="num" onclick="insert(5)">5</span>
+      <span class="num" onclick="insert(6)">6</span>
+      <span class="num plus" onclick="insert('+')">+</span>
+      <span class="num" onclick="insert(1)">1</span>
+      <span class="num" onclick="insert(2)">2</span>
+      <span class="num" onclick="insert(3)">3</span>
+      <span class="num" onclick="insert(0)">0</span>
+      <span class="num" onclick="insert('.')">.</span>
+      <span class="num equal" onclick="equals()">=</span>
+    </div>
+
+      <script src="vanilla-tilt.js"></script>
+          <script>
+        VanillaTilt.init(document.querySelector(".container"), {
+        	  max: 25,
+            speed: 200,
+            glare: true,
+            "max-glare": 0.5
+        });
+      </script>
+      <script src="app.js"></script>
+    </form>
+  </body>
+</html>
