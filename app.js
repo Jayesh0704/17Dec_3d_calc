@@ -25,7 +25,6 @@ function equals() {
   var x= document.calc.txt.value = eval(similar);
   
   }
-  insert(num);
 }
 
 

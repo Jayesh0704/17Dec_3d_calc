@@ -9,6 +9,8 @@
 
 body {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -18,6 +20,7 @@ body {
 .calculator {
   position: relative;
   display: grid;
+ 
 }
  .value {
   grid-column: span 4;
@@ -34,6 +37,9 @@ body {
 .container {
   border: 2px solid rgb(255, 255, 255, 0.3);
   border-radius: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .calculator span {
