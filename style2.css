@@ -13,7 +13,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+
   background: linear-gradient(to right, #ca23c2, #4d65f1);
 }
 
@@ -72,4 +72,11 @@ body {
 
 .calculator span.equal {
   background: rgba(255, 255, 255, 0.2);
+}
+.calculator span.plus:hover{
+  border-radius: 7%;
+}
+
+.calculator span.equal:hover {
+  border-radius: 7%;
 }
