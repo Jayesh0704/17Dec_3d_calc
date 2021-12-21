@@ -9,7 +9,6 @@
   </head>
   <body>
     <div class="container">
-      <div style="overflow-x: auto;">
     <form class="calculator" name="calc">
       <input type="text" class="value" name="txt" readonly="" />
       <span class="num clear" onclick="clean()">Clear</span>
@@ -31,7 +30,7 @@
       <span class="num" onclick="insert('.')">.</span>
       <span class="num equal" onclick="equals()">=</span>
     </div>
-  </div>
+  
       <script src="vanilla-tilt.js"></script>
           <script>
         VanillaTilt.init(document.querySelector(".container"), {
